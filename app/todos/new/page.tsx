@@ -2,10 +2,13 @@
 
 import Link from "next/link";
 
+import { NewTodo } from "@app/containers";
+
 export default function Todos() {
   return (
-    <Link href="/">
-      <div>Todos New</div>
-    </Link>
+    <div>
+      <Link href="/">New Todo</Link>
+      <NewTodo.Form />
+    </div>
   );
 }
