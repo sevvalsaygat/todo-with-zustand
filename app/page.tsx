@@ -4,8 +4,9 @@ import { Home as HomeContainer } from "@app/containers";
 
 export default function Home() {
   return (
-    <Link href="/todos/new">
+    <div>
+      <Link href="/todos/new">Home</Link>
       <HomeContainer.List />
-    </Link>
+    </div>
   );
 }
