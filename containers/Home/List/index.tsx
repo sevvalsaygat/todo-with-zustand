@@ -15,17 +15,14 @@ const List: React.FC<ListPropTypes> = () => {
   }, []);
 
   return (
-    <div>
-      <div>List</div>
-      <div>
-        {todos.map((todo, i) => {
-          return (
-            <div key={i} className="border rounded-xl mb-5">
-              <Home.ListItem todo={todo} />
-            </div>
-          );
-        })}
-      </div>
+    <div className="mt-36">
+      {todos.map((todo, i) => {
+        return (
+          <div key={i} className="mb-5">
+            <Home.ListItem todo={todo} />
+          </div>
+        );
+      })}
     </div>
   );
 };

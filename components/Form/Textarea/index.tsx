@@ -44,7 +44,7 @@ const Textarea: React.FC<InputPropTypes> = ({
   return (
     <React.Fragment>
       {label && (
-        <label className="block text-sm ml-1 font-medium leading-6 text-purple-700">
+        <label className="block text-sm ml-1 font-medium leading-6 text-purple-900">
           {label}
         </label>
       )}
