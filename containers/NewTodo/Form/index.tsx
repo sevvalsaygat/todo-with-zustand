@@ -49,21 +49,29 @@ const Form: React.FC<FormPropTypes> = () => {
   }, [todoId, getById, router]);
 
   return (
-    <div className="flex flex-col mt-5 gap-2 items-center w-full">
-      <FormProvider {...useFormMethods}>
-        <FormComponents.Input name="title" variant="primary" label="Todo" />
-        <FormComponents.Textarea
-          name="description"
-          variant="primary"
-          label="Description"
-        />
-        <Button
-          onClick={handleSubmit(onSubmit)}
-          title="Create"
-          variant="primary"
-          className="p-2"
-        />
-      </FormProvider>
+    <div className="flex flex-col mt-24 gap-2 items-center w-full">
+      <div className="border border-purple-600 rounded-3xl p-28">
+        <FormProvider {...useFormMethods}>
+          <FormComponents.Input
+            name="title"
+            variant="primary"
+            label="Todo"
+            className="pr-20"
+          />
+          <FormComponents.Textarea
+            name="description"
+            variant="primary"
+            label="Description"
+            className="pr-20"
+          />
+          <Button
+            onClick={handleSubmit(onSubmit)}
+            title="Create"
+            variant="primary"
+            className="right-0 p-2"
+          />
+        </FormProvider>
+      </div>
     </div>
   );
 };
